@@ -38,6 +38,6 @@ class NameTest {
 	    //when
 		Name name = new Name(nameValue);
 	    //then
-		assertEquals(nameValue, name.getName());
+		assertEquals(nameValue, name.getValue());
 	}
 }

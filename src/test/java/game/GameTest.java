@@ -26,7 +26,7 @@ class GameTest {
 		//when
 		int randValue = game.generateRandNumber();
 		//then
-		assertTrue(0 < randValue);
-		assertFalse(Const.RAND_MAX_VALUE < randValue);
+		assertTrue(0 <= randValue);
+		assertFalse(Const.RAND_MAX_RANGE_VALUE < randValue);
 	}
 }

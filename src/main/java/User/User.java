@@ -7,6 +7,7 @@ import car.Cars;
 import car.Name;
 import car.Positive;
 import common.Const;
+import common.MessageEnum;
 
 public class User {
 	private final Scanner scanner;
@@ -14,6 +15,14 @@ public class User {
 
 	public User() {
 		scanner = new Scanner(System.in);
+	}
+
+	public void startMessage() {
+		printMessage(MessageEnum.START_GAME.getMessage());
+	}
+
+	public void progressCountMessage() {
+		printMessage(MessageEnum.PROGRESS_COUNT.getMessage());
 	}
 
 	// 유저에게 입력을 받는 메서드. 테스트케이스를 용이하게 하기 위하여 메서드를 분리
@@ -35,5 +44,13 @@ public class User {
 			cars.addCar(car);
 		}
 		return cars;
+	}
+
+	public int getProgressCount() {
+		return Integer.parseInt(this.input);
+	}
+
+	private void printMessage(String message) {
+		System.out.println(message);
 	}
 }

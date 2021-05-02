@@ -17,6 +17,6 @@ class CarTest {
 		car.goForward(Const.FORWARD_MIN_VALUE);
 		Positive position = car.getPosition();
 	    //then
-		assertEquals(1, position.getValue());
+		assertEquals(2, position.getValue());
 	}
 }

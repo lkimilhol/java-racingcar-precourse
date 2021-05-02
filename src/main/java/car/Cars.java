@@ -21,4 +21,18 @@ public class Cars {
 	public Car getCar(int index) {
 		return cars.get(index);
 	}
+
+	public void printInitCars() {
+		for (Car car : cars) {
+			car.printCarStatus();
+		}
+	}
+	
+	public String getWinnerCars(int winnerPosition) {
+		StringBuilder stringBuilder = new StringBuilder();
+		for (Car car : cars) {
+			stringBuilder.append(car.getWinner(winnerPosition));
+		}
+		return stringBuilder.substring(1);
+	}
 }
