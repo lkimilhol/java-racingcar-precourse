@@ -6,7 +6,7 @@ public class Name {
 	private static final int MAX_LENGTH = 5;
 	private final String name;
 
-	Name(String name) {
+	public Name(String name) {
 		checkEmptyString(name);
 		checkNameLength(name);
 		this.name = name;

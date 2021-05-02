@@ -5,7 +5,7 @@ import common.ErrorEnum;
 public class Positive {
 	private int position;
 
-	Positive(int position) {
+	public Positive(int position) {
 		checkMinValue(position);
 		this.position = position;
 	}
