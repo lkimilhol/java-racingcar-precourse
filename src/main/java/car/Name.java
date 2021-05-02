@@ -4,16 +4,16 @@ import common.ErrorEnum;
 
 public class Name {
 	private static final int MAX_LENGTH = 5;
-	private final String name;
+	private final String value;
 
-	public Name(String name) {
-		checkEmptyString(name);
-		checkNameLength(name);
-		this.name = name;
+	public Name(String value) {
+		checkEmptyString(value);
+		checkNameLength(value);
+		this.value = value;
 	}
 
-	public String getName() {
-		return name;
+	public String getValue() {
+		return value;
 	}
 
 	private void checkEmptyString(String name) {
