@@ -27,6 +27,18 @@ class PositiveTest {
 	    //when
 		Positive positive = new Positive(position);
 	    //then
-		assertEquals(position, positive.getPosition());
+		assertEquals(position, positive.getValue());
+	}
+
+	@Test
+	@DisplayName("전진 시 postion 값 증가")
+	void increasePosition() {
+		//given
+		int position = 0;
+		//when
+		Positive positive = new Positive(position);
+		positive.increasePosition();
+		//then
+		assertEquals(1, positive.getValue());
 	}
 }

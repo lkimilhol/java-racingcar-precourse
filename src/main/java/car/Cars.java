@@ -17,4 +17,8 @@ public class Cars {
 	public void addCar(Car car) {
 		cars.add(car);
 	}
+
+	public Car getCar(int index) {
+		return cars.get(index);
+	}
 }
