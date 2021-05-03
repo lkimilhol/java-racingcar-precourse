@@ -17,16 +17,18 @@ public class User {
 		scanner = new Scanner(System.in);
 	}
 
-	public void startMessage() {
+	public void inputCarName() {
 		printMessage(MessageEnum.START_GAME.getMessage());
+		inputCommand();
 	}
 
-	public void progressCountMessage() {
+	public void inputProgressCount() {
 		printMessage(MessageEnum.PROGRESS_COUNT.getMessage());
+		inputCommand();
 	}
 
 	// 유저에게 입력을 받는 메서드. 테스트케이스를 용이하게 하기 위하여 메서드를 분리
-	public void inputCommand() {
+	private void inputCommand() {
 		this.input = scanner.nextLine();
 	}
 
